@@ -1,0 +1,371 @@
+.main-section {
+    display: flex;
+}
+
+/* First section */
+
+.main-section .first-section {
+    display: flex;
+    padding-top: 7%;
+    justify-content: center;
+    width: 15%;
+    background-color: lightgreen;
+}
+
+.main-section .first-section .section1 {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 2% 31%;
+    background-color: white;
+}
+
+.main-section .first-section .section1 h3 {
+    color: green;
+}
+
+/* Second section */
+
+.main-section .second-section {
+    width: 60%;
+    margin-left: 2%;
+}
+
+.main-section .second-section .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3%;
+    margin-right: 4%;
+    text-align: center;
+}
+
+.main-section .second-section .section1 button {
+    margin-bottom: 8%;
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+.main-section .second-section .section2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Third section */
+
+.main-section .third-section {
+    margin-top: 8%;
+    width: 25%;
+    padding: 0 1%;
+}
+
+.main-section .third-section .section1 .section1-order {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.main-section .third-section .section1 p .circle {
+    margin: 0 1%;
+    padding: 0.5% 1%;
+    color: green;
+    background-color: lightgreen;
+}
+
+.main-section .third-section .section2 .section2-empty h4 {
+    font-size: x-large;
+}
+
+.main-section .third-section .section2 .section2-card {
+    height: 40vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox {
+    display: flex;
+    padding: 5% 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox img {
+    width: 20%;
+    height: 10vh;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox button {
+    border: none;
+    background-color: white;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox .section2-namegram {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox .section2-namegram span {
+    color: grey;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox .section2-quantity {
+    display: flex;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 0 2%;
+    padding-top: 1%;
+}
+
+.main-section .third-section .section2 .section2-card .section2-cardbox .section2-quantity button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.main-section .third-section .section2 .section2-dragdrop {
+    width: 100%;
+    margin: 5% 0;
+    padding: 4%;
+    font-size: 15px;
+    color: green;
+    border-style: dashed;
+    border-color: green;
+
+}
+
+.main-section .third-section .section3 .section3-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .third-section .section3 .section3-button {
+    text-align: center;
+}
+
+.main-section .third-section .section3 .section3-button button {
+    width: 100%;
+    margin: 10% 0;
+    padding: 4% 0;
+    font-size: 18px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/* cart */
+
+.main-section .sectioncart {
+    display: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1130px) {
+
+    /* second-section */
+    .main-section .second-section {
+        width: 85%;
+    }
+
+    .main-section .second-section .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1%;
+        margin-top: 5%;
+    }
+
+    .main-section .second-section .section1 button {
+        margin-bottom: 0%;
+        padding: 0.5%;
+        cursor: pointer;
+    }
+
+    /* third-section */
+    .main-section .third-section {
+        display: none;
+    }
+
+    .main-section .third-section2 {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: wheat;
+        padding: 1% 0;
+        padding-left: 1%;
+        padding-right: 8%;
+        right: 0;
+        width: 45%;
+        height: 88%;
+        z-index: 10;
+        transition: .5s;
+    }
+
+    .main-section .third-section2 .section1 .section1-order {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+    }
+
+    .main-section .third-section2 .section1 p .circle {
+        margin: 0 1%;
+        padding: 0.5% 1%;
+        color: green;
+        background-color: lightgreen;
+    }
+
+    .main-section .third-section2 .section2 .section2-empty h4 {
+        font-size: x-large;
+    }
+
+    .main-section .third-section2 .section2 .section2-card {
+        height: 40vh;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox {
+        display: flex;
+        padding: 5% 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox img {
+        width: 20%;
+        height: 10vh;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox button {
+        border: none;
+        background-color: wheat;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox .section2-namegram {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox .section2-namegram span {
+        color: grey;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox .section2-quantity {
+        display: flex;
+        border: 1px solid green;
+        border-radius: 20px;
+        padding: 0 2%;
+        padding-top: 1%;
+    }
+
+    .main-section .third-section2 .section2 .section2-card .section2-cardbox .section2-quantity button {
+        border: none;
+        cursor: pointer;
+        background-color: wheat;
+    }
+
+    .main-section .third-section2 .section2 .section2-dragdrop {
+        width: 100%;
+        margin: 5% 0;
+        padding: 4%;
+        font-size: 15px;
+        color: green;
+        border-style: dashed;
+        border-color: green;
+
+    }
+
+    .main-section .third-section2 .section3 .section3-total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-section .third-section2 .section3 .section3-button {
+        text-align: center;
+    }
+
+    .main-section .third-section2 .section3 .section3-button button {
+        width: 100%;
+        margin: 10% 0;
+        padding: 4% 0;
+        font-size: 18px;
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+
+    /* cart */
+
+    .main-section .sectioncart {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        margin-top: 1%;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+
+    /* third-section */
+    .main-section .third-section2 {
+        width: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    /* second-section */
+
+    .main-section .second-section .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* third-section */
+    .main-section .third-section2 {
+        width: 70%;
+        height: auto;
+        padding-right: 10%;
+
+    }
+
+    .main-section .second-section .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+
+    /* second-section */
+
+    .main-section .second-section .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1%;
+        margin-top: 10%;
+    }
+
+    /* third-section */
+    .main-section .third-section2 {
+        width: 80%;
+
+    }
+}
